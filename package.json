@@ -9,8 +9,14 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "vue-cli-service lint --no-fix"
+      "pre-commit": "lint-staged"
     }
+  },
+  "lint-staged": {
+    "*.{ts,vue}": [
+      "vue-cli-service lint",
+      "git add"
+    ]
   },
   "dependencies": {
     "core-js": "^3.4.4",
@@ -30,6 +36,7 @@
     "eslint": "^5.16.0",
     "eslint-plugin-vue": "^5.0.0",
     "husky": "^4.2.1",
+    "lint-staged": "^10.0.7",
     "typescript": "~3.5.3",
     "vue-template-compiler": "^2.6.10"
   }

@@ -37,7 +37,7 @@
 import Vue from 'vue';
 
 export default Vue.extend({
-  name: 'HelloWorld',
+  name: 'HelloWorld!',
   props: {
     msg: String,
   },
